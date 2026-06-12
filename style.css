@@ -1,0 +1,127 @@
+ body{
+    background:black;
+}
+
+.nav_logo{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    margin-left: 50px;
+    position: relative;
+}
+
+.nav_f,
+.nav_c{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    font-weight:bold;
+}
+
+.nav_f{
+    background:#4f4ff4da;
+}
+
+.nav_c{
+    position: absolute;
+    left: 40px;
+    background:#7163bdb3;
+}
+
+.navbar-nav{
+    gap:40px;
+}
+.dropdown-menu{
+    background-color: black !important;
+}
+.dropdown-item{
+    color: rgb(138, 138, 138) !important;
+    transition: color 0.6s;
+}
+.dropdown-item:hover{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.dropdown-divider{
+    border-color: #444 !important;
+}
+.nav-link{
+    color:rgb(109, 106, 106) !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-size: 13px !important;
+    letter-spacing: 1.5px !important;
+}
+
+.nav-link:hover{
+    color:#ececec !important;
+}
+
+.nav_button{
+    padding:5px;
+    width: 150px;
+    border-radius:7px;
+    font-weight:600;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 14px;
+}
+#navbarSupportedContent{
+    margin-left: 190px !important;
+}
+.hero_section{
+    background-image: url(./bg_image.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_sub_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineOne{
+    color: white;
+    font-size: 27px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.lineTwo{
+ font-family: 'Bebas Neue', sans-serif;    font-size: 70px;
+    color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight:800;
+    text-align: center;
+}
+.lineThree{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 40px;
+    line-height: 10px;
+    text-align: center;
+}
+.main_button{
+    background-color: rgb(221, 21, 128);
+    color: white;
+    padding: 10px 32px 10px 32px;
+    border: 1px solid rgb(248, 9, 136);
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -0.7px;
+    font-weight: 700;
+}
