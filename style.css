@@ -1,3 +1,8 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
  body{
     background:black;
 }
@@ -92,11 +97,22 @@
 .lineOne{
     color: white;
     font-size: 27px;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     letter-spacing: 1px;
     text-align: center;
+    animation: leftMove 0.8s 1.3s;
 }
+@keyframes leftMove {
+    from{
+        transform: translateX(80px);
+    }
+    to{
+        
+        transform: translateX(0px);
+    }
+}
+
 .lineTwo{
  font-family: 'Bebas Neue', sans-serif;    font-size: 70px;
     color: white;
@@ -104,6 +120,15 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
     font-weight:800;
     text-align: center;
+    animation: rightMove 0.8s 1s;
+}
+@keyframes rightMove {
+    from{
+        transform: translateX(-80px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 .lineThree{
     color: white;
@@ -113,6 +138,18 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 40px;
     line-height: 10px;
     text-align: center;
+    animation: moveFront 1s 1.3s;
+}
+
+.heroSection_button{
+    animation: moveFront 1s 1.3s;
+}
+@keyframes moveFront{
+    from{
+        transform: scale(0.5);
+    }to{
+        transform: scale(1.0);
+    }
 }
 .main_button{
     background-color: rgb(221, 21, 128);
@@ -124,4 +161,249 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-family: 'Oswald', sans-serif;
     letter-spacing: -0.7px;
     font-weight: 700;
+}
+.hero_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 35px 10px;
+    box-shadow: 3px 3px 3px silver;
+}
+.hero_footer_p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgb(86, 87, 87);
+}
+.hero_footer_h{
+    color: rgb(255, 87, 26);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-top: 130px;
+    padding-bottom:90px ;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.about_section_box{
+    width:520px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about_us_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    width: 100%;
+    height: 200px;
+}
+.about_us_head{
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(108, 141, 248);
+}
+.about_us_desc{
+    color: #686666;
+    font-size: 14px;
+}
+.about_us_link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(104, 139, 255);
+}
+.about_image_box{
+    height: auto;
+    width: 100%;
+}
+
+.about_us_image{
+    border: 1px solid;
+    width: 100%;
+    height: 445px;
+    border-radius: 7px;
+    animation: aboutSecImage 1s 0.5s ;
+
+}
+@keyframes aboutSecImage {
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.organizers_section{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-image: url("./orgBGImage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.organizers_sec{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 15, 72, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    padding-top:70px ;
+}
+.organizers_head{
+    color: white;
+    width: 89%;
+    height: 50px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5px;
+}
+.organizer_body{
+    width: 89%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.organizers_head_div{
+    width: 270px;
+    height: 410px;
+}
+
+.org_head_image{
+    width: 100%;
+    height: 410px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.organizers_team_div{
+    height: 455px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 30px;
+    
+}
+.each_organizer_box{
+    width: 365px;
+    height: 220px;
+    display: flex;
+    gap: 7px;
+}
+
+@media screen and (max-width:950px) {
+    .organizers_head_div{
+        display:none;
+    }
+    .organizers_team_div{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px) {
+    .organizers_sec,.organizers_section{
+        height: 1300px;
+    }
+    .organizer_footer_line{
+        margin-top: 350px;
+    }
+}
+@media screen and (max-width:850px) {
+    .organizers_head_div{
+        display:none;
+    }
+    .each_organizer_box{
+        width: 340px;
+        height: 215px;
+    }
+    
+}
+
+.each_organizer_image{
+    width: 140px;
+    height: 130px;
+    border-radius: 12px;
+}
+.each_organizer_box_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    color: #ffffff;
+    padding: 4px;
+}
+.organizer_name{
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.organizer_role{
+    font-size: 12px;
+    line-height: 1px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.socai_link_logo{
+    width: 18px;
+    height: 18px;
+}
+.each_organizer_desc{
+    font-style: italic;
+    color: #a7a3a3;
+    font-size: 14px;
+}
+.organizer_footer_line{
+    width: 2px;
+    height: 0.1px;
+    background-color: #8d8d8d;
+    animation: orgFooterLine 0.8s  0.6s  forwards;
+}
+@keyframes orgFooterLine{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(550);
+    }
+}
+@media screen and (max-width:700px) {
+    @keyframes orgFooterLine{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(200);
+    }
+}
+}
+
+.organizers_footer_promotion_box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.promotion_image{
+    width: 140px;
+    height: 50px;
 }
