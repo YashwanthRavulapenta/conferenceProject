@@ -80,7 +80,7 @@
     margin-left: 190px !important;
 }
 .hero_section{
-    background-image: url(./bg_image.png);
+    background-image: url(./BGImages/heroBGimg.png);
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
@@ -252,7 +252,7 @@
     position: relative;
     width: 100%;
     height: 850px;
-    background-image: url("./orgBGImage.png");
+    background-image: url("./BGImages/orgBGImage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -545,9 +545,12 @@
     .our_speakers_card{
         height: 300px;
     }
+    .our_speaker_owner_image{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
     .our_speakers_owner{
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
     }
     .speakers_section{
@@ -555,7 +558,8 @@
         height: auto;
     }
     .owner_desc_div{
-        text-align: center;
+        justify-content: start;
+        padding-left: 12px;
     }
     .our_speakers_card{
         width: 100%;
@@ -568,4 +572,173 @@
         width: 100%;
         height: auto;
     }
+}
+
+.contribution_section{
+    position: relative;
+    background-image: url("./BGImages/contbnBGImg.png");
+    background-size: cover;
+    width: 100%;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-position: initial;
+}
+.overlay_contribution_section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #220420d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contribution_desc_div{
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+.contribution_head{
+    color: #ffffff;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.contribution_desc{
+    font-size: 20px;
+    color: #ababab;
+    line-height: 30px;
+}
+.contribution_button{
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 160px;
+    background-color: rgb(211, 29, 120);
+    height: 40px;
+    font-size: 13px;
+    border: 0px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+    margin-top: 40px;
+}
+.event_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.event_section_sub{
+    margin-top: 100px;
+    padding-bottom:100px ;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-between;
+    height:auto;
+}
+.event_schedule_heading{
+    color: royalblue;
+    font-size: 33px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+.day1_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+.day1_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start  ;
+    width: 100%;
+    max-width: 290px;
+}
+.day1_date{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200px;
+    margin-bottom: 0;
+    color: royalblue;
+}
+.day1_venue{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    color: #817a7a;
+}
+.day1_info_div{
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+}
+.day1_info_div_sub1 , .day1_info_div_sub2{
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+}
+.day1_info_head{
+    margin-bottom: 1px;
+    color: #787878;
+    font-size: 14px;
+}
+.day1_info_head_span{
+    font-weight: 700;
+}
+.day1_info_and_dress{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.day1_info_desc{
+    color: #8d8d8d;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.day1_dresscode{
+    font-weight: 600;
+    color: #a7a3a3;
+    font-size: 14px;
+}
+.day2_info_div{
+    width: 100%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.day_image_and_name_div{
+    width: 210px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.event_handler_image{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+.event_handler_name{
+    font-size: 16px;
+    font-weight: 700;
+    color: darkgray;
+    text-transform: uppercase;
+}
+.day_large_box_images_and_name{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
 }
