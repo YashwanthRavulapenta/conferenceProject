@@ -1065,7 +1065,7 @@
     align-items: center;
 }
 .partner_image{
-    width: 90px;
+    width: 50%;
     height: auto;
     opacity: 0;
     animation: partnerSectionAnimation 0.4s ease-in 0.2s forwards;
@@ -1081,7 +1081,7 @@
 }
 
 .sponser_image{
-    width: 75px;
+    width: 45%;
     height: auto;
     opacity: 0;
     animation: sponserSectionAnimation 0.6s ease-out 0.1s forwards;
@@ -1095,5 +1095,184 @@
     to{
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .partner_each_box{
+        width: 47%;
+        height: 155px;
+        border: 2px solid rgb(216, 212, 230);
+        text-align: center;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.price_section{
+    position: relative;
+}
+.price_section_copy{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./BGImages/orgBGImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 100%;
+}
+
+.price_overlay_section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 17, 69, 0.95);
+}
+.price_section_div{
+    width: 92%;
+    height: 80%;
+    margin-top: 120px;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: space-between;
+}
+.price_heading{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+.price_cards_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.each_price_card{
+    padding:15px 17px 5px 17px;
+    width: 277px;
+    flex-wrap: wrap;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(79, 79, 79);
+}
+#each_price_card_special{
+    border: 1px solid rgb(242, 241, 241);
+}
+.each_inner_box1{
+    width: 95%;
+    height: 23px;
+    color: white;
+    display: flex;
+    border-bottom:0.1px solid gray;
+    justify-content: space-between;
+}
+.price_name{
+    font-size: 15px;
+    font-weight: 600;
+}
+.price_remainings{
+    font-size: 11px;
+    color: #ababab;
+}
+.each_inner_box2{
+    display: flex;
+    position: relative;
+    width: 95%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom:0.1px solid gray;
+}
+.price{
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.dollar{
+    position: absolute;
+    top: 68px;
+    left: 62px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+#each_price_card_3{
+    left: 40px;
+}
+.price_on_day{
+    font-size: 11px;
+    color: #a7a2c0;
+    margin-top: 0;
+    padding-top: 0;
+}
+.each_inner_box3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    line-height: 10px;
+    color: white;
+    font-size: 11px;
+}
+.each_course_name{
+    color: #939dbe;
+}
+.price_card_button{
+    border: 1px solid royalblue;
+    background-color: transparent;
+    padding: 5px;
+    width: 140px;
+    height: 36px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s;
+}
+#price_card_button_special{
+    background-color: royalblue;
+}
+.price_card_button:hover{
+    background-color:royalblue;
+}
+
+
+
+
+
+
+@media screen and (max-width:500px){
+    .each_price_card{
+        width: 100%;
+    }
+    .dollar{
+        top: 68px;
+        left: 140px;
+    }
+    #each_price_card_3{
+        left: 120px;
     }
 }
