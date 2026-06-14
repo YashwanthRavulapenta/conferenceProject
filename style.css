@@ -1113,11 +1113,8 @@
 }
 
 .price_section{
-    position: relative;
-}
-.price_section_copy{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("./BGImages/orgBGImage.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1125,9 +1122,6 @@
 }
 
 .price_overlay_section{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height:auto;
     display: flex;
@@ -1274,5 +1268,211 @@
     }
     #each_price_card_3{
         left: 120px;
+    }
+}
+
+
+
+.loc_and_contact_section{
+    width: 100%;
+    height: autopx;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.loc_and_contact_div{
+    margin-top: 110px;
+    margin-bottom: 120px;
+    width: 87%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+.location_and_contact_heading{
+    color: rgb(77, 117, 236);
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+.loc_and_contact_div2{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.form_div{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.form_input_name{
+    width: 100%;
+    border: #b6b3b3 1px solid;
+    padding:3px 10px 3px;
+    border-radius: 5px;
+}
+.form_text_area{
+    width: 100%;
+    height: 170px;
+    border: #b6b3b3 1px solid;
+    padding:3px 10px 3px;
+    border-radius: 5px;
+}
+.form_div_button{
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 5px;
+    letter-spacing: -0.5px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: rgb(80, 117, 228);
+}
+.location_div{
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    row-gap: 30px;
+    height: auto;
+}
+.loaction_div1{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.location_div1_inner{
+    width: 28%;
+    height: auto;
+    display: flex;
+    gap: 5px;
+}
+.loc_head_des_div{
+    display: flex;
+    padding: 4px;
+    max-width: 150px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap:1px;
+}
+.location_sec_logo{
+    width: 20px;
+    height: auto;
+}
+.location_head{
+    font-weight: 700;
+    font-size: 13px;
+    color: #767373;
+}
+.loaction_desc{
+    font-size: 14px;
+    color: grey;
+}
+.location_div2_inner{
+    width: 28%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+
+}
+.contact_via_div{
+    margin-top: 5px;
+}
+.contact_number{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+.location_div2_contact_div{
+    display: flex;
+    gap: 8px;
+}
+.contact_mail_div{
+    display: flex;
+    gap: 9px;
+}
+.location_div3_inner{
+    width: 20%;
+    max-width: 135px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+.loaction_div3_inner_box{
+    display: flex;
+    gap: 7px;
+}
+.location_div2{
+    width: 100%;
+    height: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: #e1e1e1;
+}
+.location_div2_sub{
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.caution_logo{
+    width: 50x;
+    height: 50px;
+}
+.location_div2_sub_head{
+    font-size: 23px;
+    color: #575757;
+}
+.loaction_div2_sub_desc{
+    font-size: 12px;
+    color: dimgray;
+}
+@media screen and (max-width:500px) {
+    .form_div{
+        width: 100%;
+    }
+    .loc_and_contact_div2{
+        display: flex;
+        flex-direction: column;
+    }
+    .location_div{
+        width: 100%;
+        height: auto;
+    }
+    .loaction_div1{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+    .location_div1_inner{
+        width:50%;
+    }
+    .location_div2_inner{
+        width: 50%;
+        border-right: 0px;
+    }
+    .location_div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
     }
 }
