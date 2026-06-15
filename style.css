@@ -1313,9 +1313,14 @@
 }
 .form_input_name{
     width: 100%;
-    border: #b6b3b3 1px solid;
+    border: #cbcbcb 1px solid;
     padding:3px 10px 3px;
     border-radius: 5px;
+    transition:box-shadow 0.4s 0.2s;
+}
+.form_input_name:focus{
+    outline: none;
+    box-shadow:0 0 0 3px rgb(170, 191, 255);
 }
 .form_text_area{
     width: 100%;
@@ -1323,6 +1328,12 @@
     border: #b6b3b3 1px solid;
     padding:3px 10px 3px;
     border-radius: 5px;
+    transition:box-shadow 0.4s 0.2s;
+
+}
+.form_text_area:focus{
+    outline: none;
+    box-shadow:0 0 0 3px rgb(170, 191, 255);
 }
 .form_div_button{
     text-align: center;
@@ -1445,6 +1456,7 @@
     font-size: 12px;
     color: dimgray;
 }
+
 @media screen and (max-width:500px) {
     .form_div{
         width: 100%;
