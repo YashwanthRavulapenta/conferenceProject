@@ -1,9 +1,9 @@
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
- body{
+}
+body{
     background:black;
 }
 html{
@@ -24,7 +24,6 @@ html{
     gap:1px;
     position: relative;
 }
-
 .nav_f,
 .nav_c{
     width:45px;
@@ -39,11 +38,9 @@ html{
     font-family: 'Bebas Neue', sans-serif;
 
 }
-
 .nav_f{
     background:#4f4ff6da;
 }
-
 .nav_c{
     position: absolute;
     left: 35px;
@@ -74,11 +71,9 @@ html{
     text-decoration: none;
     transition: color 0.4s 0.1s;
 }
-
 .nav_link:hover{
     color:#ececec;
 }
-
 .nav_button{
     padding: 5px 2px 5px 2px;
     width: 130px;
@@ -95,6 +90,8 @@ html{
     color: #5d5b5b;
 }
 
+
+/* heroSection */
 .hero_section{
     background-image: url(./images/BGImages/heroBGimg.png);
     background-size: cover;
@@ -130,7 +127,6 @@ html{
         transform: translateX(0px);
     }
 }
-
 .lineTwo{
     font-family: 'Bebas Neue', sans-serif;    font-size: 70px;
     color: white;
@@ -162,7 +158,6 @@ html{
     animation: moveFront 0.4s 0.9s forwards;
     opacity: 0;
 }
-
 .heroSection_button{
     animation: moveFront 0.4s 0.9s forwards;
     opacity: 0;
@@ -176,7 +171,7 @@ html{
         transform: scale(1);
     }
 }
-.main_button{
+.hero_section_main_button , .hero_footer_main_button{
     background-color: rgb(221, 21, 128);
     color: white;
     padding: 10px 32px 10px 32px;
@@ -296,7 +291,6 @@ html{
     height: auto;
     width: 100%;
 }
-
 .about_us_image{
     border: 1px solid;
     width: 100%;
@@ -315,7 +309,6 @@ html{
         transform: translateY(0px);
     }
 }
-
 .organizers_section{
     position: relative;
     width: 100%;
@@ -1615,8 +1608,6 @@ html{
         height: 450px;
     }
 }
-
-
 
 .questions_section{
     width: 100%;
