@@ -72,25 +72,31 @@ html{
     font-weight: 650;
     letter-spacing: 2px;
     text-decoration: none;
+    transition: color 0.4s 0.1s;
 }
 
-.nav-link:hover{
-    color:#ececec !important;
+.nav_link:hover{
+    color:#ececec;
 }
 
 .nav_button{
     padding: 5px 2px 5px 2px;
     width: 130px;
     border-radius:4px;
-    font-weight:600;
+    font-weight:700;
     color: white;
     background-color: black;
     border: 1px solid white;
     font-size: 14px;
+    transition: background-color 0.5s , color 0.2s;
+}
+.nav_button:hover{
+    background-color: white;
+    color: #5d5b5b;
 }
 
 .hero_section{
-    background-image: url(./BGImages/heroBGimg.png);
+    background-image: url(./images/BGImages/heroBGimg.png);
     background-size: cover;
     background-repeat: repeat;
     width: 100%;
@@ -314,7 +320,7 @@ html{
     position: relative;
     width: 100%;
     height: 850px;
-    background-image: url("./BGImages/orgBGImage.png");
+    background-image: url("./images/BGImages/orgBGImage.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -656,7 +662,7 @@ html{
 
 .contribution_section{
     position: relative;
-    background-image: url("./BGImages/contbnBGImg.png");
+    background-image: url("./images/BGImages/contbnBGImg.png");
     background-size: cover;
     width: 100%;
     height: 510px;
@@ -829,7 +835,7 @@ html{
 }
 .subscribe_section{
     position: relative;
-    background-image: url("./BGImages/subscribeBg.png");
+    background-image: url("./images/BGImages/subscribeBg.png");
     width: 100%;
     height: 350px;
     background-size: cover;
@@ -852,18 +858,17 @@ html{
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: auto;
     max-width: 600px;
     gap: 5px;
 }
 .subscribe_head_and_para_box{
-    height: 100px;
-    padding-right:30px;
-    padding-top:10px ;
-    border-right:1px solid ;
-    border-right-color: #ececec;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .subscribe_heading{
     color: white;
@@ -879,7 +884,34 @@ html{
     margin: 0;
 
 }
+.subscribe_line_box{
+    width: 1px;
+    height: 100px;
+    background: #847c7c;
+    opacity: 0;
 
+    transform: scaleY(0);
+    transform-origin: center;
+
+    animation: growLine 0.8s forwards;
+}
+
+@keyframes growLine{
+    from{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+.sub_place_and_but_outer_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
 .subscribe_input_feild{
     margin-left: 0;
     border-radius: 6px;
@@ -915,8 +947,6 @@ html{
     .subscribe_head_and_para_box{
         text-align: center;
         width: 100%;
-        border-right: 0px ;
-        
     }
     .subscribe_placeholder_and_button_box{
         text-align: center;
@@ -927,6 +957,12 @@ html{
     }
     .subscribe_button{
         width: 25%;
+    }
+        .sub_place_and_but_outer_box{
+        width: 400px;
+    }
+    .subscribe_line_div{
+        display: none;
     }
     
 }
@@ -1114,6 +1150,7 @@ html{
 }
 
 
+
 .partners_section{
     width: 100%;
     background-color: rgb(225, 225, 242);
@@ -1205,7 +1242,7 @@ html{
 .price_section{
     width: 100%;
     height: 100%;
-    background-image: url("./BGImages/orgBGImage.png");
+    background-image: url("./images/BGImages/orgBGImage.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top 100%;
