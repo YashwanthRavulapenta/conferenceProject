@@ -49,7 +49,7 @@ html{
 .navbar_links_box{
     display: flex;
     justify-content: space-between;
-    gap: 55px;
+    gap: 25px;
 }
 @media screen and (max-width:550px) {
     .nav_section{
@@ -72,6 +72,8 @@ html{
     letter-spacing: 2px;
     text-decoration: none;
     transition: color 0.3s ;
+    height: auto;
+    margin: 0;
 }
 .nav_link:hover{
     color:#ececec;
@@ -107,10 +109,11 @@ html{
     justify-content: center;
     align-items: center;
     gap: 3px;
+    width: 110px;
 }
 .p1{
-    width: 9px;
-    height: 3px;
+    width: 0px;
+    height: 4px;
     border-top-left-radius:2px;
     border-bottom-left-radius:2px;
     margin-top: 5px;
@@ -121,19 +124,19 @@ html{
     animation-name: navStyle1;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-duration: 0.4s;  
+    animation-duration: 0.4s; 
 }
 @keyframes navStyle1 {
     from{
         width:0px ;
     }to{
-        width:9px;
+        width:13px;
     }
 }
 
 .p2{
-    width: 9px;
-    height: 3px;
+    width: 0px;
+    height: 4px;
     border-top-right-radius:2px;
     border-bottom-right-radius:2px;
     margin-top: 5px;
@@ -149,7 +152,7 @@ html{
     from{
         width:0px ;
     }to{
-        width:9px;
+        width:13px;
     }
 }
 
