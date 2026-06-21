@@ -15,7 +15,7 @@ html{
     align-items: center;
     gap: 290px;
     padding-top: 3px;
-    height: 64px;
+    height: 63px;
     flex-wrap: wrap;
     background-color: #000000;
 }
@@ -51,15 +51,17 @@ html{
     justify-content: space-between;
     gap: 55px;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:550px) {
     .nav_section{
         flex-direction: column;
         height: auto;
-        gap: 10px;
+        gap: 5px;
         padding: 5px;
     }
     .navbar_links_box{
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 2px;
     }
 }
@@ -69,7 +71,7 @@ html{
     font-weight: 650;
     letter-spacing: 2px;
     text-decoration: none;
-    transition: color 0.4s 0.1s;
+    transition: color 0.3s ;
 }
 .nav_link:hover{
     color:#ececec;
@@ -89,7 +91,67 @@ html{
     background-color: white;
     color: #5d5b5b;
 }
+.each_nav_link_style:hover{
+    .p1
+    {
+    display: block;
+    background-color: #7c1afc;
+    }
+    .p2{
+        display: block;
+        background-color:#7c1afc;
+    }
+}
+.each_nav_link_style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.p1{
+    width: 9px;
+    height: 3px;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    margin-top: 5px;
+    display: none;
+    background-color: rgb(235, 60, 235);
+    /* opacity: 0; */
+    /* animation: navStyle1 0.7s 2 0.2s linear; */
+    animation-name: navStyle1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;  
+}
+@keyframes navStyle1 {
+    from{
+        width:0px ;
+    }to{
+        width:9px;
+    }
+}
 
+.p2{
+    width: 9px;
+    height: 3px;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    margin-top: 5px;
+    display: none;
+    background-color: rgb(255, 24, 255);
+    animation-name: navStyle1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.4s;
+
+}
+@keyframes navStyle2 {
+    from{
+        width:0px ;
+    }to{
+        width:9px;
+    }
+}
 
 /* heroSection */
 .hero_section{
@@ -263,8 +325,17 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
-    padding-top: 130px;
-    padding-bottom:90px ;
+    padding-top: 100px;
+    padding-bottom:100px ;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.about_section_sub{
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
     box-sizing: border-box;
     flex-wrap: wrap;
 }
@@ -320,6 +391,13 @@ html{
     to{
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+@media screen and (max-widht:550px) {
+    .about_section_sub{
+        display: flex;
+        flex-direction: column;
+        column-gap: 20px;
     }
 }
 .organizers_section{
